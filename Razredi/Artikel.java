@@ -10,6 +10,7 @@ public class Artikel implements Searchable {
     private double cena;
     private int kolicina;
     private String Drzava;
+    private static String Drzava;
 
     static private double cenaZddv = 0.22;
 
@@ -47,7 +48,7 @@ public class Artikel implements Searchable {
         return kolicina;
     }
 
-    public void setDrzava(String drzava) {
+    public static void setDrzava(String drzava) {
         Drzava = drzava;
     }
 
@@ -58,7 +59,7 @@ public class Artikel implements Searchable {
             return false;
     }
 
-    public boolean checkDigit(int x[]) {
+    public static boolean checkDigit(int x[]) {
 
         int sum1 = 0;
         int sum2 = 0;
