@@ -24,12 +24,12 @@ public class Podjetje implements Searchable {
 
     @Override
     public String toString() {
-        return "Podjetje{" +
+        return "" + "\n"+
                 "ime='" + ime + '\'' +
                 ", davcnaST=" + davcnaST +
                 ", maticnaST=" + maticnaST +
                 ", davcniZavezanec=" + davcniZavezanec +
-                '}';
+                '}'+"\n";
     }
 
     public boolean search(String davcnaST) {
